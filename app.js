@@ -114,7 +114,6 @@ class Bd {
 
         if (expense.description != '') {
             filteredExpenses = filteredExpenses.filter(d => d.description == expense.description);
-
         }
 
         if (expense.cost != '') {
@@ -247,7 +246,7 @@ function researchExpenses() {
     let day = document.getElementById('day').value;
     let type = document.getElementById('type').value;
     let description = document.getElementById('description').value;
-    let value = document.getElementById('cost').value;
+    let cost = document.getElementById('cost').value;
 
     let expense = new Expense(year, month, day, type, description, cost);
 
