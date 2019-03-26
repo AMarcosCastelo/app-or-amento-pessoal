@@ -52,14 +52,14 @@
 
       <div class="row mb-2">
         <div class="col-md-2">
-          <select class="form-control" id="ano">
+          <select class="form-control" id="year">
             <option value="">Ano</option>
             <option value="2018">2018</option>
           </select>
         </div>
 
         <div class="col-md-2">
-          <select class="form-control" id="mes">
+          <select class="form-control" id="month">
             <option value="">Mês</option>
             <option value="1">Janeiro</option>
             <option value="2">Fevereiro</option>
@@ -77,11 +77,11 @@
         </div>
         
         <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
+          <input type="text" class="form-control" placeholder="Dia" id="day" />
         </div>
 
         <div class="col-md-6">
-          <select class="form-control" id="tipo">
+          <select class="form-control" id="type">
             <option value="">Tipo</option>
             <option value="1">Alimentação</option>
             <option value="2">Educação</option>
@@ -94,15 +94,15 @@
 
       <div class="row">
         <div class="col-md-8">
-          <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
+          <input type="text" class="form-control" placeholder="Descrição" id="description" />
         </div>
 
         <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Valor" id="valor" />
+          <input type="text" class="form-control" placeholder="Valor" id="cost" />
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button id="buttonGravar" type="button" class="btn btn-primary" onclick="cadastrarDespesas()">
+          <button id="buttonGravar" type="button" class="btn btn-primary" onclick="recordExpenses()">
             <i class="fas fa-plus"></i>
           </button>
         </div>
@@ -110,16 +110,16 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="registraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="recordExpense" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div id="modal_titulo_div">
-            <h5 class="modal-title" id="modal_titulo"></h5>
+          <div id="modal_title_div">
+            <h5 class="modal-title" id="modal_title"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" id="mensagemBody">
+          <div class="modal-body" id="messageBody">
           </div>
           <div class="modal-footer">
             <button id="modal_btn" type="button" data-dismiss="modal">Voltar e corrigir</button>
